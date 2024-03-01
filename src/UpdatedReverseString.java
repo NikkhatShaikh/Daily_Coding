@@ -8,7 +8,12 @@ public class UpdatedReverseString {
             reverseStr+=name.charAt(i);
         }
 
-        System.out.println("reverseStr:: "+reverseStr);
+        System.out.println(reverseStr);
+
+        //String is immutable default reverse function is not applicable on String
+        // StringBuffer is mutable so reverse() function will be used
+        StringBuffer stringBuffer = new StringBuffer(name);
+        System.out.println(stringBuffer.reverse());
 
     }
 }
